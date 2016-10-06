@@ -1,0 +1,59 @@
+------Single Dimensional array------
+
+//array declaration and instantiation
+double[] myArray = new double[4];
+
+//array initialization 
+myArray[0]=10; 
+myArray[1]=50;  
+myArray[2]=30;  
+myArray[3]=40;
+
+-------- Or ----------
+//array declaration, instantiation and initialization
+double[] myArray = {10,50,30,40};
+
+//print array 
+//length - property of array 
+for(int i=0;i<myArray.length;i++){
+  System.out.print(myArray[i]+" ");
+}
+
+//output
+10 50 30 40
+
+
+------Multidimensional array------
+
+//2D array declaration and instantiation
+//3 row and 3 column
+int[][] myArray=new int[3][3];
+
+//2D array initialization 
+myArray[0][0]=1;  
+myArray[0][1]=2;  
+myArray[0][2]=3;  
+myArray[1][0]=4;  
+myArray[1][1]=5;  
+myArray[1][2]=6;  
+myArray[2][0]=7;  
+myArray[2][1]=8;  
+myArray[2][2]=9;
+
+-------- Or ----------
+
+//2D array declaration, instantiation and initialization  
+int myArray[][]={{1,2,3},{4,5,6},{7,8,9}};  
+
+//print 2D array  
+for(int i=0;i<3;i++){  
+  for(int j=0;j<3;j++){  
+    System.out.print(myArray[i][j]+" ");  
+  }  
+  System.out.println();  
+}  
+
+//output
+1 2 3
+4 5 6
+7 8 9

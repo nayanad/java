@@ -1,0 +1,30 @@
+//create array
+double[] myArray = {10,50,30,40};
+
+//print array 
+for(int i=0;i<myArray.length;i++){
+  System.out.print(myArray[i]+" ");
+}
+//output
+// 10 50 30 40
+
+//create new array 
+double[] newArray = new double[4];
+
+int a = 0;
+
+//get myArray values
+for(int i = 0; i < myArray.length; i++){
+  a++;
+  //get myArray values from the end
+  double temp = myArray[myArray.length - a];
+  //add values to newArray
+  newArray[i] = temp;
+}
+
+//print reverse array
+for(int i=0;i<newArray.length;i++){
+  System.out.print(newArray[i]+" ");
+}
+//output
+// 40 30 50 10

@@ -1,0 +1,28 @@
+ public class ArrayCheck{
+ 
+  //create method for find index
+  public int findArray(double[] arr,double a){
+          int answer = 0;
+
+          for(int i=0;i<arr.length;i++){
+              if(arr[i]==a){
+                  answer = i;
+              }else
+                  answer = -1;
+          }
+          return answer;
+  }
+
+  public static void main(String[] args) {
+
+    double[] myArray = {10,50,30,40};
+
+    ArrayCheck ar = new ArrayCheck();
+    int value = ar.findArray(myArray, 50);
+    System.out.println("Index: "+value);
+
+  }
+}
+
+//output
+Index: 1

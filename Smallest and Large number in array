@@ -1,0 +1,20 @@
+public class FindNumber {
+
+	public static void main (String[] args){
+
+		int num[] = new int[]{20,10,50,60,40,30};
+
+		int smallNum = num[0];
+		int largeNum = num[0];
+
+		for(int i=1; i<num.length; i++){
+			if(num[i] > largeNum)
+				largeNum = num[i];
+			else if(num[i] < smallNum)
+				smallNum = num[i];
+		}
+
+		System.out.println("Large : "+ largeNum);
+		System.out.println("Small : "+ smallNum);
+	}
+}
